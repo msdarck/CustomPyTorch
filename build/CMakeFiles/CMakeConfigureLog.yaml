@@ -1,0 +1,910 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 5.4.0-89-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /notebooks/build/CMakeFiles/3.25.20230125-g950effe/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /notebooks/build/CMakeFiles/3.25.20230125-g950effe/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lwMdTC"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lwMdTC"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lwMdTC
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a6912/fast && /usr/bin/make  -f CMakeFiles/cmTC_a6912.dir/build.make CMakeFiles/cmTC_a6912.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lwMdTC'
+        Building C object CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.25/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccPEScuP.s
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: c0c95c0b4209efec1c1892d5ff24030b
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o /tmp/ccPEScuP.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_a6912
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6912.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o -o cmTC_a6912 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a6912' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccupgpPj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a6912 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a6912' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lwMdTC'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/local/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lwMdTC]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a6912/fast && /usr/bin/make  -f CMakeFiles/cmTC_a6912.dir/build.make CMakeFiles/cmTC_a6912.dir/build]
+        ignore line: [make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lwMdTC']
+        ignore line: [Building C object CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.25/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccPEScuP.s]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: c0c95c0b4209efec1c1892d5ff24030b]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o /tmp/ccPEScuP.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_a6912]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6912.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o -o cmTC_a6912 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a6912' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccupgpPj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a6912 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccupgpPj.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a6912] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [CMakeFiles/cmTC_a6912.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-OxlwbD"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-OxlwbD"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-OxlwbD
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_73f0e/fast && /usr/bin/make  -f CMakeFiles/cmTC_73f0e.dir/build.make CMakeFiles/cmTC_73f0e.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-OxlwbD'
+        Building CXX object CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccaTpD0V.s
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 65fe925b83d3956b533de4aaba7dace0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccaTpD0V.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_73f0e
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73f0e.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_73f0e 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_73f0e' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCYrLAB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_73f0e /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_73f0e' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-OxlwbD'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/share/cmake-3.25/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/9]
+          add: [/usr/include/x86_64-linux-gnu/c++/9]
+          add: [/usr/include/c++/9/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+        collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/local/share/cmake-3.25/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-OxlwbD]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_73f0e/fast && /usr/bin/make  -f CMakeFiles/cmTC_73f0e.dir/build.make CMakeFiles/cmTC_73f0e.dir/build]
+        ignore line: [make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-OxlwbD']
+        ignore line: [Building CXX object CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccaTpD0V.s]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 65fe925b83d3956b533de4aaba7dace0]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccaTpD0V.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_73f0e]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73f0e.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_73f0e ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_73f0e' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCYrLAB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_73f0e /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccCYrLAB.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_73f0e] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [CMakeFiles/cmTC_73f0e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/local/share/cmake-3.25/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake/cpu.cmake:17 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:45 (include)"
+    checks:
+      - "Performing Test VAES_SUPPORTED"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-ILNUSF"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-ILNUSF"
+    buildResult:
+      variable: "VAES_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-ILNUSF
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1b52f/fast && /usr/bin/make  -f CMakeFiles/cmTC_1b52f.dir/build.make CMakeFiles/cmTC_1b52f.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-ILNUSF'
+        Building CXX object CMakeFiles/cmTC_1b52f.dir/src.cxx.o
+        /usr/bin/c++ -DVAES_SUPPORTED  -mavx2 -mvaes -o CMakeFiles/cmTC_1b52f.dir/src.cxx.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-ILNUSF/src.cxx
+        Linking CXX executable cmTC_1b52f
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b52f.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_1b52f.dir/src.cxx.o -o cmTC_1b52f 
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-ILNUSF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "src/base/base.cmake:177 (CHECK_INCLUDE_FILE)"
+      - "CMakeLists.txt:47 (include)"
+    checks:
+      - "Looking for syslog.h"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-P3ZTAF"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-P3ZTAF"
+    buildResult:
+      variable: "HAVE_SYSLOG_H"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-P3ZTAF
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_77dd6/fast && /usr/bin/make  -f CMakeFiles/cmTC_77dd6.dir/build.make CMakeFiles/cmTC_77dd6.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-P3ZTAF'
+        Building C object CMakeFiles/cmTC_77dd6.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_77dd6.dir/CheckIncludeFile.c.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-P3ZTAF/CheckIncludeFile.c
+        Linking C executable cmTC_77dd6
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77dd6.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_77dd6.dir/CheckIncludeFile.c.o -o cmTC_77dd6 
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-P3ZTAF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CheckSymbolExists.cmake:71 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "cmake/flags.cmake:94 (check_symbol_exists)"
+      - "CMakeLists.txt:199 (include)"
+    checks:
+      - "Looking for __builtin___clear_cache"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-TSvmzF"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-TSvmzF"
+    buildResult:
+      variable: "HAVE_BUILTIN_CLEAR_CACHE"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-TSvmzF
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f0495/fast && /usr/bin/make  -f CMakeFiles/cmTC_f0495.dir/build.make CMakeFiles/cmTC_f0495.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-TSvmzF'
+        Building C object CMakeFiles/cmTC_f0495.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall -Wno-strict-aliasing -maes  -o CMakeFiles/cmTC_f0495.dir/CheckSymbolExists.c.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-TSvmzF/CheckSymbolExists.c
+        Linking C executable cmTC_f0495
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0495.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes  -rdynamic CMakeFiles/cmTC_f0495.dir/CheckSymbolExists.c.o -o cmTC_f0495 
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-TSvmzF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:69 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_sse2_NOFLAG"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-AZbl3B"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-AZbl3B"
+    buildResult:
+      variable: "FEATURE_sse2_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-AZbl3B
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7497e/fast && /usr/bin/make  -f CMakeFiles/cmTC_7497e.dir/build.make CMakeFiles/cmTC_7497e.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-AZbl3B'
+        Building C object CMakeFiles/cmTC_7497e.dir/src.c.o
+        /usr/bin/cc -DFEATURE_sse2_NOFLAG  -Wall -Wno-strict-aliasing -maes  -o CMakeFiles/cmTC_7497e.dir/src.c.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-AZbl3B/src.c
+        Linking C executable cmTC_7497e
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7497e.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes  -rdynamic CMakeFiles/cmTC_7497e.dir/src.c.o -o cmTC_7497e 
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-AZbl3B'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:70 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_ssse3_NOFLAG"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FmbciD"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FmbciD"
+    buildResult:
+      variable: "FEATURE_ssse3_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FmbciD
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_72d06/fast && /usr/bin/make  -f CMakeFiles/cmTC_72d06.dir/build.make CMakeFiles/cmTC_72d06.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FmbciD'
+        Building C object CMakeFiles/cmTC_72d06.dir/src.c.o
+        /usr/bin/cc -DFEATURE_ssse3_NOFLAG  -Wall -Wno-strict-aliasing -maes  -o CMakeFiles/cmTC_72d06.dir/src.c.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FmbciD/src.c
+        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:35,
+                         from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:32,
+                         from /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FmbciD/src.c:1:
+        /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FmbciD/src.c: In function ‘function_ssse3’:
+        /usr/lib/gcc/x86_64-linux-gnu/9/include/tmmintrin.h:136:1: error: inlining failed in call to always_inline ‘_mm_shuffle_epi8’: target specific option mismatch
+          136 | _mm_shuffle_epi8 (__m128i __X, __m128i __Y)
+              | ^~~~~~~~~~~~~~~~
+        /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FmbciD/src.c:5:12: note: called from here
+            5 |     *dst = _mm_shuffle_epi8(*a, *b);
+              |            ^~~~~~~~~~~~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_72d06.dir/build.make:78: CMakeFiles/cmTC_72d06.dir/src.c.o] Error 1
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FmbciD'
+        make: *** [Makefile:127: cmTC_72d06/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:70 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_ssse3_FLAG"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lMljQC"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lMljQC"
+    buildResult:
+      variable: "FEATURE_ssse3_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lMljQC
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bc061/fast && /usr/bin/make  -f CMakeFiles/cmTC_bc061.dir/build.make CMakeFiles/cmTC_bc061.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lMljQC'
+        Building C object CMakeFiles/cmTC_bc061.dir/src.c.o
+        /usr/bin/cc -DFEATURE_ssse3_FLAG  -Wall -Wno-strict-aliasing -maes -mssse3 -o CMakeFiles/cmTC_bc061.dir/src.c.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lMljQC/src.c
+        Linking C executable cmTC_bc061
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc061.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mssse3 -rdynamic CMakeFiles/cmTC_bc061.dir/src.c.o -o cmTC_bc061 
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-lMljQC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:71 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_xop_NOFLAG"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-h3iruE"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-h3iruE"
+    buildResult:
+      variable: "FEATURE_xop_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-h3iruE
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7a533/fast && /usr/bin/make  -f CMakeFiles/cmTC_7a533.dir/build.make CMakeFiles/cmTC_7a533.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-h3iruE'
+        Building C object CMakeFiles/cmTC_7a533.dir/src.c.o
+        /usr/bin/cc -DFEATURE_xop_NOFLAG  -Wall -Wno-strict-aliasing -maes  -o CMakeFiles/cmTC_7a533.dir/src.c.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-h3iruE/src.c
+        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:38,
+                         from /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-h3iruE/src.c:1:
+        /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-h3iruE/src.c: In function ‘function_xop’:
+        /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-h3iruE/src.c:5:12: error: ‘__builtin_ia32_vprotqi’ needs isa option -mxop
+            5 |     *dst = _mm_roti_epi64(*a, b);
+              |            ^~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_7a533.dir/build.make:78: CMakeFiles/cmTC_7a533.dir/src.c.o] Error 1
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-h3iruE'
+        make: *** [Makefile:127: cmTC_7a533/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:71 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_xop_FLAG"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FIbvXE"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FIbvXE"
+    buildResult:
+      variable: "FEATURE_xop_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FIbvXE
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ea9c1/fast && /usr/bin/make  -f CMakeFiles/cmTC_ea9c1.dir/build.make CMakeFiles/cmTC_ea9c1.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FIbvXE'
+        Building C object CMakeFiles/cmTC_ea9c1.dir/src.c.o
+        /usr/bin/cc -DFEATURE_xop_FLAG  -Wall -Wno-strict-aliasing -maes -mxop -o CMakeFiles/cmTC_ea9c1.dir/src.c.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FIbvXE/src.c
+        Linking C executable cmTC_ea9c1
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea9c1.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mxop -rdynamic CMakeFiles/cmTC_ea9c1.dir/src.c.o -o cmTC_ea9c1 
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-FIbvXE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:72 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx2_NOFLAG"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-xB9ecF"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-xB9ecF"
+    buildResult:
+      variable: "FEATURE_avx2_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-xB9ecF
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2f08b/fast && /usr/bin/make  -f CMakeFiles/cmTC_2f08b.dir/build.make CMakeFiles/cmTC_2f08b.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-xB9ecF'
+        Building C object CMakeFiles/cmTC_2f08b.dir/src.c.o
+        /usr/bin/cc -DFEATURE_avx2_NOFLAG  -Wall -Wno-strict-aliasing -maes  -o CMakeFiles/cmTC_2f08b.dir/src.c.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-xB9ecF/src.c
+        /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-xB9ecF/src.c: In function ‘function_avx2’:
+        /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-xB9ecF/src.c:5:10: warning: AVX vector return without AVX enabled changes the ABI [-Wpsabi]
+            5 |     *dst = _mm256_xor_si256(*a, *b);
+              |     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:53,
+                         from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:32,
+                         from /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-xB9ecF/src.c:1:
+        /usr/lib/gcc/x86_64-linux-gnu/9/include/avx2intrin.h:913:1: error: inlining failed in call to always_inline ‘_mm256_xor_si256’: target specific option mismatch
+          913 | _mm256_xor_si256 (__m256i __A, __m256i __B)
+              | ^~~~~~~~~~~~~~~~
+        /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-xB9ecF/src.c:5:12: note: called from here
+            5 |     *dst = _mm256_xor_si256(*a, *b);
+              |            ^~~~~~~~~~~~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_2f08b.dir/build.make:78: CMakeFiles/cmTC_2f08b.dir/src.c.o] Error 1
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-xB9ecF'
+        make: *** [Makefile:127: cmTC_2f08b/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:72 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx2_FLAG"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-S4MnqF"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-S4MnqF"
+    buildResult:
+      variable: "FEATURE_avx2_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-S4MnqF
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5c029/fast && /usr/bin/make  -f CMakeFiles/cmTC_5c029.dir/build.make CMakeFiles/cmTC_5c029.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-S4MnqF'
+        Building C object CMakeFiles/cmTC_5c029.dir/src.c.o
+        /usr/bin/cc -DFEATURE_avx2_FLAG  -Wall -Wno-strict-aliasing -maes -mavx2 -o CMakeFiles/cmTC_5c029.dir/src.c.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-S4MnqF/src.c
+        Linking C executable cmTC_5c029
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c029.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mavx2 -rdynamic CMakeFiles/cmTC_5c029.dir/src.c.o -o cmTC_5c029 
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-S4MnqF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:49 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:73 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx512f_NOFLAG"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-tLDWvE"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-tLDWvE"
+    buildResult:
+      variable: "FEATURE_avx512f_NOFLAG"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-tLDWvE
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c29f0/fast && /usr/bin/make  -f CMakeFiles/cmTC_c29f0.dir/build.make CMakeFiles/cmTC_c29f0.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-tLDWvE'
+        Building C object CMakeFiles/cmTC_c29f0.dir/src.c.o
+        /usr/bin/cc -DFEATURE_avx512f_NOFLAG  -Wall -Wno-strict-aliasing -maes  -o CMakeFiles/cmTC_c29f0.dir/src.c.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-tLDWvE/src.c
+        In file included from /usr/lib/gcc/x86_64-linux-gnu/9/include/immintrin.h:55,
+                         from /usr/lib/gcc/x86_64-linux-gnu/9/include/x86intrin.h:32,
+                         from /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-tLDWvE/src.c:1:
+        /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-tLDWvE/src.c: In function ‘function_avx512f’:
+        /usr/lib/gcc/x86_64-linux-gnu/9/include/avx512fintrin.h:204:1: error: inlining failed in call to always_inline ‘_mm512_undefined_epi32’: target specific option mismatch
+          204 | _mm512_undefined_epi32 (void)
+              | ^~~~~~~~~~~~~~~~~~~~~~
+        /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-tLDWvE/src.c:5:12: note: called from here
+            5 |     *dst = _mm512_ror_epi64(*a, 57);
+              |            ^~~~~~~~~~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_c29f0.dir/build.make:78: CMakeFiles/cmTC_c29f0.dir/src.c.o] Error 1
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-tLDWvE'
+        make: *** [Makefile:127: cmTC_c29f0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:54 (check_c_source_compiles)"
+      - "src/3rdparty/argon2/CMakeLists.txt:73 (add_feature_impl)"
+    checks:
+      - "Performing Test FEATURE_avx512f_FLAG"
+    directories:
+      source: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-rbUFaF"
+      binary: "/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-rbUFaF"
+    buildResult:
+      variable: "FEATURE_avx512f_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-rbUFaF
+        
+        Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5a0ea/fast && /usr/bin/make  -f CMakeFiles/cmTC_5a0ea.dir/build.make CMakeFiles/cmTC_5a0ea.dir/build
+        make[1]: Entering directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-rbUFaF'
+        Building C object CMakeFiles/cmTC_5a0ea.dir/src.c.o
+        /usr/bin/cc -DFEATURE_avx512f_FLAG  -Wall -Wno-strict-aliasing -maes -mavx512f -o CMakeFiles/cmTC_5a0ea.dir/src.c.o -c /notebooks/build/CMakeFiles/CMakeScratch/TryCompile-rbUFaF/src.c
+        Linking C executable cmTC_5a0ea
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a0ea.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -Wno-strict-aliasing -maes -mavx512f -rdynamic CMakeFiles/cmTC_5a0ea.dir/src.c.o -o cmTC_5a0ea 
+        make[1]: Leaving directory '/notebooks/build/CMakeFiles/CMakeScratch/TryCompile-rbUFaF'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake:1099 (message)"
+      - "/usr/local/share/cmake-3.25/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "cmake/asm.cmake:21 (enable_language)"
+      - "CMakeLists.txt:205 (include)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      cc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+      Copyright (C) 2019 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...

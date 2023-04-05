@@ -1,0 +1,25 @@
+CMakeFiles/xmrig.dir/src/crypto/randomx/jit_compiler_x86_static.S.o: \
+ /notebooks/src/crypto/randomx/jit_compiler_x86_static.S \
+ /usr/include/stdc-predef.h \
+ /notebooks/src/crypto/randomx/asm/program_prologue_linux.inc \
+ /notebooks/src/crypto/randomx/asm/program_xmm_constants.inc \
+ /notebooks/src/crypto/randomx/asm/program_imul_rcp_store.inc \
+ /notebooks/src/crypto/randomx/asm/program_loop_load.inc \
+ /notebooks/src/crypto/randomx/asm/program_loop_load_xop.inc \
+ /notebooks/src/crypto/randomx/asm/program_read_dataset.inc \
+ /notebooks/src/crypto/randomx/asm/program_read_dataset_sshash_init.inc \
+ /notebooks/src/crypto/randomx/asm/program_read_dataset_sshash_fin.inc \
+ /notebooks/src/crypto/randomx/asm/program_loop_store.inc \
+ /notebooks/src/crypto/randomx/asm/program_sshash_avx2_save_registers.inc \
+ /notebooks/src/crypto/randomx/asm/program_sshash_avx2_constants.inc \
+ /notebooks/src/crypto/randomx/asm/program_sshash_avx2_loop_begin.inc \
+ /notebooks/src/crypto/randomx/asm/program_sshash_avx2_loop_end.inc \
+ /notebooks/src/crypto/randomx/asm/program_sshash_avx2_epilogue.inc \
+ /notebooks/src/crypto/randomx/asm/program_sshash_avx2_ssh_load.inc \
+ /notebooks/src/crypto/randomx/asm/program_sshash_avx2_ssh_prefetch.inc \
+ /notebooks/src/crypto/randomx/asm/program_epilogue_store.inc \
+ /notebooks/src/crypto/randomx/asm/program_epilogue_linux.inc \
+ /notebooks/src/crypto/randomx/asm/program_sshash_load.inc \
+ /notebooks/src/crypto/randomx/asm/program_sshash_prefetch.inc \
+ /notebooks/src/crypto/randomx/asm/program_sshash_constants.inc \
+ /notebooks/src/crypto/randomx/asm/randomx_reciprocal.inc
